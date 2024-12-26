@@ -13,10 +13,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Program.fs"/>
-    </ItemGroup>
-
-    <ItemGroup>
       <None Include="app.manifest" />
       <None Include="Content\Content.mgcb" />
       <None Include="Content\obj\DesktopGL\net8.0\Content\.mgstats" />
@@ -33,6 +29,10 @@
       <EmbeddedResource Include="Icon.bmp">
         <LogicalName>Icon.bmp</LogicalName>
       </EmbeddedResource>
+      <Compile Include="Game\GameTypes.fs" />
+      <Compile Include="Game\WorldFunctions.fs" />
+      <Folder Include="IO\" />
+      <Compile Include="Program.fs"/>
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.2.1105"/>
